@@ -2,6 +2,8 @@
 
 Personal portfolio website for a systems architect and generalist developer. Built with vanilla JavaScript, Three.js, and CSS custom properties.
 
+**Live:** https://gleeful-malasada-b193fb.netlify.app/
+
 ## Features
 
 - **Protocol Sigma** — an interactive 4-module puzzle game hidden within the page. Solve wire tracing, Caesar cipher, pattern memory, and logic gate challenges to unlock a rewards system.
