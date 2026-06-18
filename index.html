@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jebasingh Joshua | Systems & Learning Architect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+
+  <div id="progressBar" aria-hidden="true"></div>
+
+  <!-- ===== Navigation ===== -->
+  <header>
+    <nav>
+      <a href="#home" class="nav-logo">JJ</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#fragment" class="nav-link">Method</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section id="home">
+    <div class="hero-pattern"></div>
+    <div class="hero">
+      <div class="hero-badge" data-reveal="down" data-reveal-duration="fast" style="transition-delay:0s">Systems &amp; Learning Architect</div>
+      <h1 data-reveal="up" data-reveal-duration="float" style="transition-delay:0.12s">Jebasingh <span class="highlight">Joshua</span></h1>
+      <p class="title-role" data-reveal="up" style="transition-delay:0.24s">Web Developer &middot; Cybersecurity Enthusiast &middot; Generalist Thinker</p>
+      <p class="tagline" data-reveal="up" data-reveal-duration="slow" style="transition-delay:0.36s">I build complete systems across domains — web applications, learning frameworks, game mechanics, and narrative structures. I don't specialize; I <em>synthesize</em>.</p>
+      <div class="hero-actions" data-reveal="up" data-reveal-duration="fast" style="transition-delay:0.5s">
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-reveal="left" data-reveal-duration="fast" style="transition-delay:0s">About</div>
+        <h2 class="section-title" data-reveal="right" style="transition-delay:0.1s">Architect of <span style="color:var(--primary)">Systems</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-reveal="up" style="transition-delay:0.15s">
+            I'm a <strong>17-year-old systems architect</strong> currently pursuing my B.E in Computer Science (Cyber Security) at Prince Dr. K. Vasudevan College of Engineering and Technology. My approach combines first-principles thinking, AI orchestration, and a unique fragment-based learning methodology.
+          </p>
+          <p data-reveal="up" style="transition-delay:0.25s">
+            I don't just write code — I study how systems work, from web apps to learning frameworks to game mechanics. Each domain I touch teaches me something I apply across the others. That's the <strong>generalist advantage</strong>.
+          </p>
+          <div class="about-details" data-reveal="up" data-reveal-duration="fast" style="transition-delay:0.35s">
+            <div><span class="icon">&#9654;</span> 17 yrs old</div>
+            <div><span class="icon">&#9654;</span> B.E CSE (Cyber Security)</div>
+            <div><span class="icon">&#9654;</span> 4+ projects shipped</div>
+          </div>
+        </div>
+        <div class="about-domains stagger-children">
+          <div class="domain-card" data-reveal="up" style="transition-delay:0.1s">
+            <div class="domain-icon">&#127760;</div>
+            <h3 style="font-size:0.9rem;font-weight:600;margin-bottom:4px">Web Development</h3>
+            <p>Full frontend apps with vanilla JS, localStorage architecture, and responsive design.</p>
+          </div>
+          <div class="domain-card" data-reveal="up" style="transition-delay:0.18s">
+            <div class="domain-icon">&#128737;</div>
+            <h3 style="font-size:0.9rem;font-weight:600;margin-bottom:4px">Cybersecurity</h3>
+            <p>Secure coding, input sanitization, brute-force protection, ban systems.</p>
+          </div>
+          <div class="domain-card" data-reveal="up" style="transition-delay:0.26s">
+            <div class="domain-icon">&#9881;</div>
+            <h3 style="font-size:0.9rem;font-weight:600;margin-bottom:4px">Learning Theory</h3>
+            <p>Creator of the Fragment Method, a universal framework for rapid skill acquisition.</p>
+          </div>
+          <div class="domain-card" data-reveal="up" style="transition-delay:0.34s">
+            <div class="domain-icon">&#127918;</div>
+            <h3 style="font-size:0.9rem;font-weight:600;margin-bottom:4px">Game Design</h3>
+            <p>Escape room mechanics, patrol AI, lock-picking minigames, penalty systems.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Fragment Method ===== -->
+  <section id="fragment">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label" data-reveal="down" data-reveal-duration="fast" style="transition-delay:0s">Methodology</div>
+        <h2 class="section-title" data-reveal="scale" style="transition-delay:0.1s">The <span style="color:var(--primary)">Fragment</span> Method</h2>
+        <p class="section-desc center" data-reveal="up" style="transition-delay:0.2s">A universal learning framework built on the principle that knowledge is nested fragments. Learn the fragments, learn the system. Domain-independent: works for coding, biology, physics, languages.</p>
+      </div>
+      <div class="fragment-grid">
+        <div class="fragment-intro">
+          <h3 data-reveal="left" data-reveal-duration="slow" style="transition-delay:0.1s">Learn anything in 7 steps</h3>
+          <p data-reveal="left" style="transition-delay:0.2s">
+            Most learning fails because we try to memorise isolated facts. The Fragment Method teaches you to recognise <strong>patterns across fragments</strong>, whether you're learning <code>.map()</code> in JavaScript or protein folding in biology.
+          </p>
+          <p style="margin-top:12px;transition-delay:0.3s" data-reveal="left" data-reveal-duration="fast">
+            A programmer who knows one language can learn another <strong>in 2 weeks</strong> using this method. Every fragment connects. Every mistake becomes data.
+          </p>
+        </div>
+        <div class="fragment-steps stagger-children">
+          <div class="fragment-step" data-reveal="right" data-reveal-duration="float">
+            <div class="step-content">
+              <h4>Keyword + Syntax</h4>
+              <p>Map(callback) transforms array elements.</p>
+            </div>
+          </div>
+          <div class="fragment-step" data-reveal="right" data-reveal-duration="float">
+            <div class="step-content">
+              <h4>Input / Output</h4>
+              <p>Input [1,2,3] → output [2,4,6].</p>
+            </div>
+          </div>
+          <div class="fragment-step" data-reveal="right" data-reveal-duration="float">
+            <div class="step-content">
+              <h4>Learner finds logic</h4>
+              <p>Writes own implementation before seeing the answer.</p>
+            </div>
+          </div>
+          <div class="fragment-step" data-reveal="right" data-reveal-duration="float">
+            <div class="step-content">
+              <h4>Compare &amp; Optimise</h4>
+              <p>Sees why the native method is better.</p>
+            </div>
+          </div>
+          <div class="fragment-step" data-reveal="right" data-reveal-duration="float">
+            <div class="step-content">
+              <h4>Understand Why</h4>
+              <p>Discovers underlying principle (immutability, efficiency).</p>
+            </div>
+          </div>
+          <div class="fragment-step" data-reveal="right" data-reveal-duration="float">
+            <div class="step-content">
+              <h4>Debug Combinations</h4>
+              <p>Fixes broken code mixing map, filter, reduce.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-reveal="left" data-reveal-duration="fast" style="transition-delay:0s">Proficiencies</div>
+        <h2 class="section-title" data-reveal="right" style="transition-delay:0.1s">Tools of the <span style="color:var(--primary)">Trade</span></h2>
+      </div>
+      <div class="skills-wrapper stagger-children">
+        <div class="skill-item" data-reveal="up" data-reveal-duration="fast">
+          <div class="skill-header"><span>HTML</span><span>90%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="90"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal="up" data-reveal-duration="fast">
+          <div class="skill-header"><span>CSS</span><span>85%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal="up" data-reveal-duration="fast">
+          <div class="skill-header"><span>JavaScript</span><span>80%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="80"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal="up" data-reveal-duration="fast">
+          <div class="skill-header"><span>Python</span><span>70%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="70"></div>
+          </div>
+        </div>
+        <div class="skill-item" data-reveal="up" data-reveal-duration="fast">
+          <div class="skill-header"><span>Cybersecurity</span><span>65%</span></div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="65"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-reveal="left" data-reveal-duration="fast" style="transition-delay:0s">Portfolio</div>
+        <h2 class="section-title" data-reveal="right" style="transition-delay:0.1s">Projects I've <span style="color:var(--primary)">Built</span></h2>
+      </div>
+      <div class="projects-grid stagger-children">
+
+        <article class="project-card" data-reveal="up" data-reveal-duration="float">
+          <div class="project-num">Featured Project</div>
+          <h3>Digital Time Capsule</h3>
+          <span class="project-status"><span class="dot"></span> Deployed</span>
+          <p>Time-locked capsules with full auth, role-based access, self-destruct mechanism (3 premature attempts destroys capsule), admin dashboard, friend system, activity logging, and backup/restore. Built entirely in vanilla JS + localStorage.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>localStorage</span>
+          </div>
+          <a href="https://github.com/jebasinghjoshua24/TIME-CAPSULE" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub</a>
+        </article>
+
+        <article class="project-card" data-reveal="up" data-reveal-duration="float">
+          <div class="project-num">Featured Project</div>
+          <h3>Password Security Vault</h3>
+          <span class="project-status"><span class="dot"></span> Complete</span>
+          <p>Secure password storage with encryption, master password protection, and input sanitization. Designed with security-first principles and a clean, intuitive interface.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/jebasinghjoshua24/PASSWORD_SECURITY_VAULT" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub</a>
+        </article>
+
+        <article class="project-card" data-reveal="up" data-reveal-duration="float">
+          <div class="project-num">Featured Project</div>
+          <h3>Library Management System</h3>
+          <span class="project-status"><span class="dot"></span> Complete</span>
+          <p>Full library tracking system with member management, book issue/return workflows, and search capabilities. A complete CRUD application built entirely with vanilla frontend technologies.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/jebasinghjoshua24/LIBRARY-MANAGEMENT-SYSTEM" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub</a>
+        </article>
+
+        <article class="project-card" data-reveal="up" data-reveal-duration="float">
+          <div class="project-num">Featured Project</div>
+          <h3>Password Strength Checker</h3>
+          <span class="project-status"><span class="dot"></span> Complete</span>
+          <p>Real-time password strength analysis with visual feedback, pattern detection, and actionable suggestions. Demonstrates regex mastery and UX-focused design.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <a href="https://github.com/jebasinghjoshua24/PASSWORD_STRENGTH_CHECKER" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-reveal="left" data-reveal-duration="fast" style="transition-delay:0s">Contact</div>
+        <h2 class="section-title" data-reveal="right" style="transition-delay:0.1s">Let's <span style="color:var(--primary)">Connect</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3 data-reveal="left" style="transition-delay:0.15s">Build something together</h3>
+          <p data-reveal="left" style="transition-delay:0.25s">Whether you have a project idea, want to discuss the Fragment Method, or just geek out about systems. I'm always open to a conversation.</p>
+          <div class="contact-links">
+            <a href="tel:8438372780" class="contact-link">
+              <span class="cl-icon">&#9742;</span>
+              <span>+91 84383 72780</span>
+            </a>
+            <a href="https://github.com/jebasinghjoshua24" target="_blank" rel="noopener" class="contact-link">
+              <span class="cl-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.085 1.838 1.237 1.838 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.306.762-1.606-2.665-.302-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12 24 5.37 18.63 0 12 0z"/></svg>
+              </span>
+              <span>github.com/jebasinghjoshua24</span>
+            </a>
+            <a href="https://www.linkedin.com/in/jebasingh-joshua-j-440851386/" target="_blank" rel="noopener" class="contact-link">
+              <span class="cl-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              <span>linkedin.com/in/jebasingh-joshua-j</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate data-reveal="right" style="transition-delay:0.15s">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell me about your project or idea..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <div class="success-message" id="successMessage">
+            Thanks! Your message has been sent successfully. I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/jebasinghjoshua24" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.085 1.838 1.237 1.838 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.776.418-1.306.762-1.606-2.665-.302-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12 24 5.37 18.63 0 12 0z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/jebasingh-joshua-j-440851386/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="tel:8438372780" aria-label="Phone">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+    </div>
+    <button class="easter-egg-btn" id="easterEggBtn" aria-label="Terminal">&#9670;</button>
+    <p>&copy; 2026 Jebasingh Joshua &middot; Systems &amp; Learning Architect</p>
+  </footer>
+
+  <!-- ===== Back to Top ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+  <div id="gameOverlay" class="game-overlay">
+    <div id="threeContainer" class="three-container"></div>
+    <div id="gameUI" class="game-ui">
+
+      <!-- Start Screen -->
+      <div id="sigmaStart" class="sigma-screen">
+        <div class="sigma-start-badge">&#9670; PROTOCOL SIGMA</div>
+        <div class="sigma-start-title">FRAGMENT DEFUSAL</div>
+        <div class="sigma-start-sub">The vault is locked. 4 fragments guard the master code. Solve each module before the timer expires.</div>
+        <div class="sigma-start-hint">The code echoes through this page — study every section.</div>
+        <button class="sigma-btn primary" id="sigmaInitBtn">INITIALIZE SEQUENCE</button>
+        <button class="sigma-btn secondary" id="sigmaStartSkip">ABORT MISSION</button>
+      </div>
+
+      <!-- HUD -->
+      <div id="sigmaHUD" class="sigma-hud" style="display:none">
+        <div class="sigma-top">
+          <div class="sigma-badge">&#9670; PROTOCOL SIGMA</div>
+          <div class="sigma-timer" id="sigmaTimer">05:00</div>
+        </div>
+        <div class="sigma-modules" id="sigmaModules"></div>
+        <div class="sigma-hud-actions">
+          <button class="sigma-btn secondary" id="sigmaAbort">ABORT MISSION</button>
+          <button class="sigma-btn tertiary" id="sigmaCodeBtn">ENTER CODE</button>
+        </div>
+      </div>
+
+      <!-- Module Play Area -->
+      <div id="sigmaPlay" class="sigma-play" style="display:none">
+        <div class="sigma-play-header">
+          <button id="sigmaPlayBack" class="sigma-btn small">&#8592; BACK</button>
+          <div class="sigma-play-module-name" id="sigmaPlayName">MODULE 1: WIRES</div>
+        </div>
+        <div id="sigmaPlayContent" class="sigma-play-content"></div>
+      </div>
+
+      <!-- Keypad -->
+      <div id="sigmaKeypad" class="sigma-keypad" style="display:none">
+        <div class="sigma-keypad-title">MASTER CODE</div>
+        <div class="sigma-keypad-slots" id="sigmaKeySlots">
+          <div class="key-slot" data-i="0">_</div>
+          <div class="key-slot" data-i="1">_</div>
+          <div class="key-slot" data-i="2">_</div>
+          <div class="key-slot" data-i="3">_</div>
+        </div>
+        <div class="sigma-keypad-grid" id="sigmaKeyGrid">
+          <button class="key-btn" data-n="1">1</button>
+          <button class="key-btn" data-n="2">2</button>
+          <button class="key-btn" data-n="3">3</button>
+          <button class="key-btn" data-n="4">4</button>
+          <button class="key-btn" data-n="5">5</button>
+          <button class="key-btn" data-n="6">6</button>
+          <button class="key-btn" data-n="7">7</button>
+          <button class="key-btn" data-n="8">8</button>
+          <button class="key-btn" data-n="9">9</button>
+          <button class="key-btn key-btn-wide" data-action="clear">CLR</button>
+          <button class="key-btn" data-n="0">0</button>
+          <button class="key-btn key-btn-wide key-btn-submit" data-action="submit">UNLOCK</button>
+        </div>
+        <div id="sigmaKeyFeedback" class="sigma-key-feedback"></div>
+      </div>
+
+      <!-- Reward -->
+      <div id="sigmaReward" class="sigma-reward" style="display:none">
+        <div class="sigma-reward-badge">
+          <div class="sigma-badge-hex"></div>
+        </div>
+        <div class="sigma-reward-title">ACCESS GRANTED</div>
+        <div class="sigma-reward-sub">FRAGMENT 0x7F RECOVERED</div>
+        <div class="sigma-terminal">
+          <div class="terminal-line">&gt; Initializing fragment lattice...</div>
+          <div class="terminal-line">&gt; Lattice complete. Systems Architect verified.</div>
+          <div class="terminal-line">&gt; <span class="terminal-quote">"Knowledge is not a monolith; it is a lattice of fragments."</span></div>
+        </div>
+        <button class="sigma-btn primary" id="sigmaRewardBtn">CONTINUE TO PORTFOLIO</button>
+        <button class="sigma-btn secondary" id="sigmaThemeRewardBtn" style="margin-top:6px">✦ THEME STUDIO</button>
+      </div>
+
+      <!-- Theme Studio -->
+      <div id="sigmaThemeStudio" class="sigma-screen sigma-theme-studio" style="display:none">
+        <div class="sigma-theme-modal">
+          <button class="sigma-theme-close" id="sigmaThemeClose">&#10005;</button>
+          <div class="sigma-theme-title">✦ THEME STUDIO</div>
+          <div class="sigma-theme-sub" id="sigmaThemeSub">Choose an exclusive palette. Your reward for cracking the code.</div>
+          <div class="sigma-theme-grid" id="sigmaThemeGrid"></div>
+          <div class="sigma-theme-custom" id="sigmaThemeCustom" style="display:none">
+            <div class="sigma-theme-custom-title">CUSTOM COLOR PICKER</div>
+            <div class="sigma-theme-custom-row">
+              <label class="sigma-custom-label"><span class="sigma-custom-swatch" style="background:var(--primary,#F0A818)"></span>Primary</label>
+              <input type="color" class="sigma-color-pick" id="sigmaPickPrimary" value="#F0A818">
+            </div>
+            <div class="sigma-theme-custom-row">
+              <label class="sigma-custom-label"><span class="sigma-custom-swatch" style="background:var(--secondary,#2DD4BF)"></span>Secondary</label>
+              <input type="color" class="sigma-color-pick" id="sigmaPickSecondary" value="#2DD4BF">
+            </div>
+            <div class="sigma-theme-custom-row">
+              <label class="sigma-custom-label"><span class="sigma-custom-swatch" style="background:var(--accent,#F05252)"></span>Accent</label>
+              <input type="color" class="sigma-color-pick" id="sigmaPickAccent" value="#F05252">
+            </div>
+            <div class="sigma-theme-custom-row">
+              <label class="sigma-custom-label"><span class="sigma-custom-swatch" style="background:var(--bg,#0B0F1A)"></span>Background</label>
+              <input type="color" class="sigma-color-pick" id="sigmaPickBg" value="#0B0F1A">
+            </div>
+            <div class="sigma-theme-custom-row">
+              <label class="sigma-custom-label"><span class="sigma-custom-swatch" style="background:var(--text,#E8EDF5)"></span>Text</label>
+              <input type="color" class="sigma-color-pick" id="sigmaPickText" value="#E8EDF5">
+            </div>
+            <button class="sigma-btn small" id="sigmaCustomBack" style="display:block;margin:16px auto 6px">← BACK TO THEMES</button>
+          </div>
+          <button class="sigma-btn small" id="sigmaThemeBack" style="display:block;margin:16px auto 0">BACK TO PORTFOLIO</button>
+        </div>
+      </div>
+
+    </div>
+    <button id="globalSkipBtn" class="skip-btn">&#9199; SKIP</button>
+  </div>
+
+  <!-- Konami Terminal -->
+  <div id="terminalOverlay" class="terminal-overlay" style="display:none">
+    <div class="terminal-wrap">
+      <div class="terminal-header">PORTFOLIO TERMINAL v1.0 — type <span class="terminal-hl">help</span> for commands</div>
+      <div class="terminal-output" id="terminalOutput"></div>
+      <div class="terminal-input-line">
+        <span class="terminal-prompt">visitor@portfolio:~$</span>
+        <input type="text" id="terminalInput" class="terminal-input" spellcheck="false" autocomplete="off" autocapitalize="off">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
