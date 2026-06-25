@@ -49,25 +49,6 @@
   }, { threshold: 0.2, rootMargin: '-68px 0px -40% 0px' });
   document.querySelectorAll('section[id]').forEach(s => secObs.observe(s));
 
-  // Skill bars
-  const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      const bar = entry.target.querySelector('.skill-fill');
-      if (!bar) return;
-      if (entry.isIntersecting) {
-        bar.style.transition = 'none';
-        bar.style.transform = 'scaleX(0)';
-        void bar.offsetWidth;
-        bar.style.transition = 'transform 1.2s cubic-bezier(0.22, 0.61, 0.36, 1)';
-        bar.style.transform = 'scaleX(' + (parseFloat(bar.getAttribute('data-width')) / 100) + ')';
-      } else {
-        bar.style.transition = 'none';
-        bar.style.transform = 'scaleX(0)';
-      }
-    });
-  }, { threshold: 0.2, rootMargin: '0px' });
-  document.querySelectorAll('.skill-item').forEach(el => skillObserver.observe(el));
-
   // Form
   function valName() { const v = nameInput.value.trim(); nameError.textContent = v ? '' : 'Name is required.'; return !!v; }
   function valEmail() { const v = emailInput.value.trim(); if (!v) { emailError.textContent = 'Email is required.'; return false; } if (!v.includes('@') || !v.includes('.')) { emailError.textContent = 'Enter a valid email.'; return false; } emailError.textContent = ''; return true; }
